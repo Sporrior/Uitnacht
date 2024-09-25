@@ -1,0 +1,1 @@
+2024/09/25 17:15:38 [error] 31971#0: *2512 upstream prematurely closed connection while reading response header from upstream, client: ::1, server: , request: "GET /wp-admin/post.php?post=15&action=edit HTTP/1.1", upstream: "fastcgi://unix:/Users/main/Library/Application Support/Local/run/_cpyPULlO/php/php-fpm.socket:", host: "localhost:10013", referrer: "http://localhost:10013/"

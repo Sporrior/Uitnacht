@@ -9,20 +9,48 @@ if ( isset( $_GET['delete_location'] ) ) {
 
     if ( isset( $locations[$index_to_delete] ) ) {
         unset( $locations[$index_to_delete] );
-        $locations = array_values( $locations );
+        $locations = array_values( $locations ); 
         update_option( 'uitnacht_locations_data', $locations );
 
         echo '<div class="notice notice-success is-dismissible"><p>Locatie succesvol verwijderd!</p></div>';
     }
 }
 
+if ( isset( $_GET['delete_all'] ) && $_GET['delete_all'] == 'true' ) {
+    delete_option( 'uitnacht_locations_data' );
+    echo '<div class="notice notice-success is-dismissible"><p>Alle locaties zijn succesvol verwijderd!</p></div>';
+}
+
+$search_query = isset( $_GET['search'] ) ? sanitize_text_field( $_GET['search'] ) : '';
 $locations = get_option( 'uitnacht_locations_data', array() );
+
+if ( ! empty( $search_query ) ) {
+    $locations = array_filter( $locations, function( $location ) use ( $search_query ) {
+        return stripos( $location['name'], $search_query ) !== false || stripos( $location['address'], $search_query ) !== false;
+    });
+}
+
 ?>
 
 <div class="wrap">
     <div class="uitnacht-settings-container">
         <h1>Opgeslagen Locaties</h1>
         <p>Hieronder vind je een lijst van alle opgeslagen locaties. Je kunt locaties verwijderen door op de verwijderknop te klikken.</p>
+
+        <form method="GET" action="">
+            <input type="hidden" name="page" value="<?php echo esc_attr( $_GET['page'] ); ?>">
+            <input type="text" name="search" placeholder="Zoek op naam of adres" value="<?php echo esc_attr( $search_query ); ?>" />
+            <input type="submit" value="Zoeken" class="button button-primary" />
+            <a href="?page=<?php echo esc_attr( $_GET['page'] ); ?>" class="button">Reset</a>
+        </form>
+
+        <?php if ( ! empty( $locations ) ) : ?>
+            <form method="GET" action="">
+                <input type="hidden" name="page" value="<?php echo esc_attr( $_GET['page'] ); ?>">
+                <input type="hidden" name="delete_all" value="true">
+                <input type="submit" value="Verwijder Alle Locaties" class="button button-danger" onclick="return confirm('Weet je zeker dat je alle locaties wilt verwijderen?');" />
+            </form>
+        <?php endif; ?>
 
         <?php if ( ! empty( $locations ) ) : ?>
             <table class="wp-list-table widefat fixed striped uitnacht-table">
@@ -115,5 +143,9 @@ $locations = get_option( 'uitnacht_locations_data', array() );
         padding: 15px;
         border-left: 4px solid #28a745;
         margin-bottom: 20px;
+    }
+    .button-primary {
+        background-color: #0073aa;
+        color: #fff;
     }
 </style>

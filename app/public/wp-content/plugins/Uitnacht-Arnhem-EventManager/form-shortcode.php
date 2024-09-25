@@ -38,7 +38,6 @@ function uitnacht_save_location_form() {
         }
     }
 
-    // Display the form
     ob_start(); ?>
     <div class="uitnacht-form-container">
         <h1>Voeg een nieuwe locatie toe</h1>
