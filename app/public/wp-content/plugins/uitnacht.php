@@ -15,21 +15,22 @@ add_action('admin_menu', 'uitnacht_info_menu');
 
 function uitnacht_info_menu() {
     add_menu_page(
-        'Uitnacht Info Checker',
-        'Uitnacht Info Checker',  
-        'manage_options',         
-        'uitnacht-info-checker',   
-        'dashicons-admin-generic', 
-        2                          
+        'Uitnacht Info Checker',   // Page title
+        'Uitnacht Info Checker',   // Menu title
+        'manage_options',          // Capability
+        'uitnacht-info-checker',   // Menu slug
+        'uitnacht_info_page',      // Function to display content
+        'dashicons-admin-generic', // Icon
+        2                          // Position
     );
 
     add_submenu_page(
-        'uitnacht-info-checker',
-        'Informatie Settings', 
-        'Informatie Settings',
-        'manage_options',  
-        'uitnacht-informatie-settings',
-        'uitnacht_informatie_settings_page'
+        'uitnacht-info-checker',   // Parent slug
+        'Informatie Settings',     // Page title
+        'Informatie Settings',     // Menu title
+        'manage_options',          // Capability
+        'uitnacht-informatie-settings',  // Menu slug
+        'uitnacht_informatie_settings_page'  // Function to display content
     );
 }
 
