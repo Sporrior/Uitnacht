@@ -32,8 +32,11 @@ function uitnacht_location_map_shortcode() {
                 var marker = L.marker([location.latitude, location.longitude]).addTo(map)
                     .bindPopup(
                         '<strong>' + location.name + '</strong><br>' + 
-                        location.address + '<br>' + 
-                        location.description + '<br><br>' + 
+                        '<strong>Datum:</strong> ' + location.date + '<br>' +
+                        '<strong>Starttijd:</strong> ' + location.start_time + '<br>' +
+                        '<strong>Eindtijd:</strong> ' + location.end_time + '<br>' +
+                        '<strong>Adres:</strong> ' + location.address + '<br>' + 
+                        '<strong>Beschrijving:</strong> ' + location.description + '<br><br>' + 
                         '<a href="https://www.google.com/maps?q=' + encodeURIComponent(location.address) + '" ' +
                         'target="_blank" class="button button-small">Bekijk op Google Maps</a>'
                     );
