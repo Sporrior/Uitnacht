@@ -7,7 +7,7 @@ function uitnacht_location_map_shortcode() {
     $locations = get_option( 'uitnacht_locations_data', array() );
 
     if ( empty( $locations ) ) {
-        return '<p>No locations available to display on the map.</p>';
+        return '<p>Geen locaties om op de kaart weer te geven.</p>';
     }
 
     ob_start(); ?>
@@ -30,11 +30,33 @@ function uitnacht_location_map_shortcode() {
         locations.forEach(function(location) {
             if (location.latitude && location.longitude) {
                 var marker = L.marker([location.latitude, location.longitude]).addTo(map)
-                    .bindPopup('<strong>' + location.name + '</strong><br>' + location.address + '<br>' + location.description);
+                    .bindPopup(
+                        '<strong>' + location.name + '</strong><br>' + 
+                        location.address + '<br>' + 
+                        location.description + '<br><br>' + 
+                        '<a href="https://www.google.com/maps?q=' + encodeURIComponent(location.address) + '" ' +
+                        'target="_blank" class="button button-small">Bekijk op Google Maps</a>'
+                    );
             }
         });
     });
     </script>
+
+    <style>
+        .leaflet-popup-content a.button {
+            display: inline-block;
+            background-color: #0073aa;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .leaflet-popup-content a.button:hover {
+            background-color: #005a87;
+        }
+    </style>
 
     <?php return ob_get_clean();
 }

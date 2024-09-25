@@ -8,6 +8,9 @@ function uitnacht_save_location_form() {
         $address     = sanitize_text_field( $_POST['uitnacht_address'] );
         $name        = sanitize_text_field( $_POST['uitnacht_name'] );
         $description = sanitize_textarea_field( $_POST['uitnacht_description'] );
+        $date        = sanitize_text_field( $_POST['uitnacht_date'] );
+        $start_time  = sanitize_text_field( $_POST['uitnacht_start_time'] );
+        $end_time    = sanitize_text_field( $_POST['uitnacht_end_time'] );
 
         $geo_data = wp_remote_get( "https://nominatim.openstreetmap.org/search?q=" . urlencode( $address ) . "&format=json" );
         $geo_data = json_decode( wp_remote_retrieve_body( $geo_data ), true );
@@ -21,6 +24,9 @@ function uitnacht_save_location_form() {
                 'address'     => $address,
                 'name'        => $name,
                 'description' => $description,
+                'date'        => $date,
+                'start_time'  => $start_time,
+                'end_time'    => $end_time,
                 'latitude'    => $latitude,
                 'longitude'   => $longitude
             );
@@ -32,14 +38,15 @@ function uitnacht_save_location_form() {
         }
     }
 
+    // Display the form
     ob_start(); ?>
     <div class="uitnacht-form-container">
         <h1>Voeg een nieuwe locatie toe</h1>
-        <p class="intro-text">Gebruik het onderstaande formulier om een nieuwe locatie toe te voegen aan de lijst. Zorg ervoor dat alle informatie correct is voordat je het formulier verzendt.</p>
+        <p class="intro-text">Gebruik het onderstaande formulier om een nieuw evenement toe te voegen. Zorg ervoor dat alle informatie correct is voordat je het formulier verzendt.</p>
 
         <form method="post" action="">
             <div class="form-group">
-                <label for="uitnacht_name">Naam van locatie:</label>
+                <label for="uitnacht_name">Naam van evenement:</label>
                 <input type="text" name="uitnacht_name" id="uitnacht_name" required class="form-input">
             </div>
 
@@ -49,7 +56,22 @@ function uitnacht_save_location_form() {
             </div>
 
             <div class="form-group">
-                <label for="uitnacht_description">Beschrijving van locatie:</label>
+                <label for="uitnacht_date">Datum:</label>
+                <input type="date" name="uitnacht_date" id="uitnacht_date" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="uitnacht_start_time">Starttijd:</label>
+                <input type="time" name="uitnacht_start_time" id="uitnacht_start_time" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="uitnacht_end_time">Eindtijd:</label>
+                <input type="time" name="uitnacht_end_time" id="uitnacht_end_time" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="uitnacht_description">Beschrijving van evenement:</label>
                 <textarea name="uitnacht_description" id="uitnacht_description" rows="5" required class="form-input"></textarea>
             </div>
 
@@ -102,15 +124,15 @@ function uitnacht_save_location_form() {
             resize: vertical;
         }
         .button-primary {
-            background-color: #0073aa;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            display: block;
-            margin: 0 auto;
-            border: none;
+            background-color: #0073aa !important;
+            color: #fff !important;
+            padding: 10px 20px !important;
+            border-radius: 5px !important;
+            font-size: 16px !important;
+            cursor: pointer !important; 
+            display: block !important;
+            margin: 0 auto !important;
+            border: none !important;
         }
         .button-primary:hover {
             background-color: #006799;
