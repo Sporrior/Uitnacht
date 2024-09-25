@@ -1,12 +1,15 @@
 <?php
 /*
-Plugin Name: Uitnacht
-Description: A simple plugin to display the Uitnacht info page, locations, and map.
-Version: 1.0
+Plugin Name: Uitnacht Information & Location Manager
+Description: A Wordpress plugin for managing and displaying Uitnacht event information, including location mapping, event details, and interactive features. Designed for simplicity and ease of use.
 Author: Damien Engelen, Sintayu de Kuiper
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+// Detailed Description:
+This plugin provides event organizers with the ability to showcase event locations for Uitnacht. It offers map integration, event time management, and a streamlined interface for adding and deleting events.
 */
 
-// Prevent direct access
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
@@ -42,7 +45,6 @@ function uitnacht_informatie_settings_page() {
     include(plugin_dir_path(__FILE__) . 'table-view.php');
 }
 
-// Include the form and map shortcodes
 include(plugin_dir_path(__FILE__) . 'form-shortcode.php');
 include(plugin_dir_path(__FILE__) . 'map-shortcode.php');
 ?>

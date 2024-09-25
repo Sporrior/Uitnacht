@@ -103,3 +103,4 @@ Stack trace:
 #2 /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin.php(259): do_action('dashboard_page_...')
 #3 {main}
   thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324
+[25-Sep-2024 15:21:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/form-shortcode.php:96) in /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin-header.php on line 9

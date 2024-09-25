@@ -31,14 +31,16 @@ function uitnacht_location_map_shortcode() {
             if (location.latitude && location.longitude) {
                 var marker = L.marker([location.latitude, location.longitude]).addTo(map)
                     .bindPopup(
-                        '<strong>' + location.name + '</strong><br>' + 
-                        '<strong>Datum:</strong> ' + location.date + '<br>' +
-                        '<strong>Starttijd:</strong> ' + location.start_time + '<br>' +
-                        '<strong>Eindtijd:</strong> ' + location.end_time + '<br>' +
-                        '<strong>Adres:</strong> ' + location.address + '<br>' + 
-                        '<strong>Beschrijving:</strong> ' + location.description + '<br><br>' + 
+                        '<div class="popup-content">' +
+                        '<h3>' + location.name + '</h3>' + 
+                        '<p><strong>Datum:</strong> ' + location.date + '</p>' +
+                        '<p><strong>Starttijd:</strong> ' + location.start_time + '</p>' +
+                        '<p><strong>Eindtijd:</strong> ' + location.end_time + '</p>' +
+                        '<p><strong>Adres:</strong> ' + location.address + '</p>' + 
+                        '<p><strong>Beschrijving:</strong><br>' + location.description + '</p>' + 
                         '<a href="https://www.google.com/maps?q=' + encodeURIComponent(location.address) + '" ' +
-                        'target="_blank" class="button button-small">Bekijk op Google Maps</a>'
+                        'target="_blank" class="button button-small">Bekijk op Google Maps</a>' +
+                        '</div>'
                     );
             }
         });
@@ -46,18 +48,36 @@ function uitnacht_location_map_shortcode() {
     </script>
 
     <style>
+        .leaflet-popup-content h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .leaflet-popup-content p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
         .leaflet-popup-content a.button {
             display: inline-block;
             background-color: #0073aa;
             color: #fff;
-            padding: 6px 12px;
-            border-radius: 4px;
+            padding: 8px 15px;
+            border-radius: 5px;
             text-decoration: none;
             font-size: 14px;
             margin-top: 10px;
+            transition: background-color 0.3s ease;
         }
+
         .leaflet-popup-content a.button:hover {
             background-color: #005a87;
+        }
+
+        .popup-content {
+            max-width: 250px;
         }
     </style>
 
