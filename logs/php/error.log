@@ -82,3 +82,24 @@ Stack trace:
 [25-Sep-2024 12:33:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
 [25-Sep-2024 12:34:03 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
 [25-Sep-2024 12:34:03 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:58:59 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "uitnacht_tabel_view_page" not found or invalid function name in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 /Users/main/Local Sites/uitnacht/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin.php(259): do_action('dashboard_page_...')
+#3 {main}
+  thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324
+[25-Sep-2024 12:59:00 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "uitnacht_tabel_view_page" not found or invalid function name in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 /Users/main/Local Sites/uitnacht/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin.php(259): do_action('dashboard_page_...')
+#3 {main}
+  thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324
+[25-Sep-2024 12:59:00 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "uitnacht_tabel_view_page" not found or invalid function name in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 /Users/main/Local Sites/uitnacht/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin.php(259): do_action('dashboard_page_...')
+#3 {main}
+  thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324

@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Uitnacht
-Description: A simple plugin to display the Uitnacht info page and settings.
+Description: A simple plugin to display the Uitnacht info page, locations, and map.
 Version: 1.0
 Author: Damien Engelen, Sintayu de Kuiper
 */
@@ -15,8 +15,8 @@ add_action('admin_menu', 'uitnacht_info_menu');
 
 function uitnacht_info_menu() {
     add_menu_page(
-        'Uitnacht Info Checker',   // Page title
-        'Uitnacht Info Checker',   // Menu title
+        'Uitnacht Dashboard',   // Page title
+        'Uitnacht Dashboard',   // Menu title
         'manage_options',          // Capability
         'uitnacht-info-checker',   // Menu slug
         'uitnacht_info_page',      // Function to display content
@@ -26,8 +26,8 @@ function uitnacht_info_menu() {
 
     add_submenu_page(
         'uitnacht-info-checker',   // Parent slug
-        'Informatie Settings',     // Page title
-        'Informatie Settings',     // Menu title
+        'Gebruikers-Tabel',     // Page title
+        'Gebruikers Tabel',     // Menu title
         'manage_options',          // Capability
         'uitnacht-informatie-settings',  // Menu slug
         'uitnacht_informatie_settings_page'  // Function to display content
@@ -39,5 +39,10 @@ function uitnacht_info_page() {
 }
 
 function uitnacht_informatie_settings_page() {
-    include(plugin_dir_path(__FILE__) . 'settings-view.php');
+    include(plugin_dir_path(__FILE__) . 'table-view.php');
 }
+
+// Include the form and map shortcodes
+include(plugin_dir_path(__FILE__) . 'form-shortcode.php');
+include(plugin_dir_path(__FILE__) . 'map-shortcode.php');
+?>
