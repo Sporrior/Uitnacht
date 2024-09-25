@@ -16,3 +16,90 @@
 [18-Sep-2024 12:05:08 UTC] PHP Warning:  include(): Failed opening '/Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/dashboard-view.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 33
 [18-Sep-2024 12:05:08 UTC] PHP Warning:  include(/Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/dashboard-view.php): Failed to open stream: No such file or directory in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 33
 [18-Sep-2024 12:05:08 UTC] PHP Warning:  include(): Failed opening '/Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/dashboard-view.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 33
+[25-Sep-2024 12:33:00 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "dashicons-admin-generic" not found or invalid function name in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 /Users/main/Local Sites/uitnacht/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin.php(259): do_action('toplevel_page_u...')
+#3 {main}
+  thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324
+[25-Sep-2024 12:33:02 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "dashicons-admin-generic" not found or invalid function name in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 /Users/main/Local Sites/uitnacht/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin.php(259): do_action('toplevel_page_u...')
+#3 {main}
+  thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324
+[25-Sep-2024 12:33:14 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "dashicons-admin-generic" not found or invalid function name in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 /Users/main/Local Sites/uitnacht/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin.php(259): do_action('toplevel_page_u...')
+#3 {main}
+  thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324
+[25-Sep-2024 12:33:19 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "dashicons-admin-generic" not found or invalid function name in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 /Users/main/Local Sites/uitnacht/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin.php(259): do_action('toplevel_page_u...')
+#3 {main}
+  thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324
+[25-Sep-2024 12:33:52 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:52 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:53 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:53 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:55 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:55 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:56 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:56 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:56 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:56 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:56 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:57 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:57 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:57 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:57 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:57 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:58 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:58 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:58 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:58 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:58 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:58 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:58 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:58 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:58 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:58 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:58 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:33:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:34:03 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:34:03 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/main/Local Sites/uitnacht/app/public/wp-content/plugins/uitnacht.php on line 35
+[25-Sep-2024 12:58:59 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "uitnacht_tabel_view_page" not found or invalid function name in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 /Users/main/Local Sites/uitnacht/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin.php(259): do_action('dashboard_page_...')
+#3 {main}
+  thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324
+[25-Sep-2024 12:59:00 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "uitnacht_tabel_view_page" not found or invalid function name in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 /Users/main/Local Sites/uitnacht/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin.php(259): do_action('dashboard_page_...')
+#3 {main}
+  thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324
+[25-Sep-2024 12:59:00 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "uitnacht_tabel_view_page" not found or invalid function name in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 /Users/main/Local Sites/uitnacht/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/main/Local Sites/uitnacht/app/public/wp-admin/admin.php(259): do_action('dashboard_page_...')
+#3 {main}
+  thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324
