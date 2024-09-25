@@ -3,7 +3,7 @@
 Plugin Name: Uitnacht
 Description: A simple plugin to display the Uitnacht info page and settings.
 Version: 1.0
-Author: Damien Engelen, kutzooi test
+Author: Damien Engelen, Sintayu
 */
 
 add_action('admin_menu', 'uitnacht_info_menu');
