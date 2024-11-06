@@ -1,5 +1,5 @@
 === Uitnacht Information & Location Manager ===
-Contributors: Damien Engelen, Sintayu de Kuiper  
+Contributors: Ahmad Mahouk, Damien Engelen, Sintayu de Kuiper, Wessam Naj  
 Tags: events, location, maps, uitnacht, google maps, leaflet, event management  
 Requires at least: 5.0  
 Tested up to: 6.3  
