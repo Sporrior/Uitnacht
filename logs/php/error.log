@@ -513,3 +513,23 @@ Stack trace:
 #6 /Users/main/Local Sites/uitnacht/app/public/index.php(17): require('/Users/main/Loc...')
 #7 {main}
   thrown in /Users/main/Local Sites/uitnacht/app/public/wp-includes/class-wp-hook.php on line 324
+[02-Dec-2024 10:23:32 UTC] PHP Warning:  Undefined variable $time_slots in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 24
+[02-Dec-2024 10:23:32 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 24
+[02-Dec-2024 10:23:32 UTC] PHP Warning:  Undefined variable $locations in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 30
+[02-Dec-2024 10:23:32 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 30
+[02-Dec-2024 10:23:48 UTC] PHP Warning:  Undefined variable $time_slots in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 24
+[02-Dec-2024 10:23:48 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 24
+[02-Dec-2024 10:23:48 UTC] PHP Warning:  Undefined variable $locations in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 30
+[02-Dec-2024 10:23:48 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 30
+[02-Dec-2024 10:23:51 UTC] PHP Warning:  Undefined variable $time_slots in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 24
+[02-Dec-2024 10:23:51 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 24
+[02-Dec-2024 10:23:51 UTC] PHP Warning:  Undefined variable $locations in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 30
+[02-Dec-2024 10:23:51 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 30
+[02-Dec-2024 10:23:56 UTC] PHP Warning:  Undefined variable $time_slots in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 24
+[02-Dec-2024 10:23:56 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 24
+[02-Dec-2024 10:23:56 UTC] PHP Warning:  Undefined variable $locations in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 30
+[02-Dec-2024 10:23:56 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 30
+[02-Dec-2024 10:23:56 UTC] PHP Warning:  Undefined variable $time_slots in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 24
+[02-Dec-2024 10:23:56 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 24
+[02-Dec-2024 10:23:56 UTC] PHP Warning:  Undefined variable $locations in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 30
+[02-Dec-2024 10:23:56 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ahmad\Local Sites\Uitnacht\app\public\wp-content\plugins\Uitnacht-Arnhem-EventManager\table-view.php on line 30
